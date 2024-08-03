@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIView {
+public extension UIView {
 	/// Pins the current view to the top edge of the specified `view`.
 	///
 	/// > Important: The `view` parameter must be an ancestor of the current view. Ensure the view hierarchy is set up correctly before calling this method.
