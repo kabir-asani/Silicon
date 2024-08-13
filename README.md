@@ -2,6 +2,28 @@
 
 Silicon is a minimalist DSL for UIKit that transforms your Auto Layout constraints from verbose to elegant, cumbersom to expressive.
 
+## TL;DR
+```diff
+import UIKit
++ import Swift
+
+class FeedViewController: UIViewController {
+	private let tableView = UITableView()
+	
+	override func viewDidLoad) {
+		super. viewDidLoad()
+		view.addSubview(tableView)
+-		NSLayoutConstraint.activate([
+-			tableView.topAnchor. constraint(equalTo: view.topAnchor, constant: 0),
+-			tableView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0),
+-			tableView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0),
+-			tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
+-		])
++		tableView.pin(to: view)
+	}
+}
+```
+
 ## Installation
 
 ### Swift Package Manager
