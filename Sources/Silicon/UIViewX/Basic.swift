@@ -28,4 +28,14 @@ public extension UIView {
 		
 		NSLayoutConstraint.activate(constraints)
 	}
+	
+	/// Sets `isHidden` property of the current view to `false`
+	func show() {
+		isHidden = false
+	}
+	
+	/// Sets `isHidden` property of the current view to `true`
+	func hide() {
+		isHidden = true
+	}
 }
