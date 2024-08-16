@@ -38,4 +38,10 @@ public extension UIView {
 	func hide() {
 		isHidden = true
 	}
+	
+	/// Adds current view as the subview of the passed `view` argument.
+	/// - Parameter view: The parent view want to which you want to add current view as subview
+	func addAsSubview(of view: UIView) {
+		view.addSubview(self)
+	}
 }
