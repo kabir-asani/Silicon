@@ -5,13 +5,13 @@ Silicon is a minimalist DSL for UIKit that transforms your Auto Layout constrain
 ## TL;DR
 ```diff
 import UIKit
-+ import Swift
++ import Silicon
 
 class FeedViewController: UIViewController {
 	private let tableView = UITableView()
 	
-	override func viewDidLoad) {
-		super. viewDidLoad()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		view.addSubview(tableView)
 -		NSLayoutConstraint.activate([
 -			tableView.topAnchor. constraint(equalTo: view.topAnchor, constant: 0),
